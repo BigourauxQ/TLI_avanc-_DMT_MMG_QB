@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+    
+    <link rel="stylesheet" href="../stylesheet/hotels.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><label>connexion</label> </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    </head>
+
+    <body onmouseover="recap()">
+
+        <div id="haut"  >
+            <div id='none'>
+                <p id ='namesite'>fritinerantur</p>
+            </div>
+            <div>
+           
+            <a id ='menu' class = 'tete' href = 'Site_page_accueil.html' >menu</a>
+           
+            <a id ='contact' class = 'tete' href = 'page-de-contacte.html' >contact</a>
+           
+            <a id ='panier' class = 'tete' href = 'panier.html' >
+                <img id = imagedepanier  src='../image/panier.png ' alt="unes image de panier">
+                </a>
+            
+            <a id ='connexion' class = 'tete' href = 'connexion.html' >connexion</a>
+           
+    
+            </div>
+    
+        </div>
+    
+        <div id='enhaut'>
+            <a  href='#top'><img id='fleche' src="../image/fleche-haut.png"  alt="image fleche"></a>
+        </div>
+       <div id = 'rien'></div>
+
+      
+            <h1>RECAPITULATIF</h1>
+                <h2>destination : <span id="par_ville"></h2></span><br><br>
+                    <h3>NOM :</h3><span id="par_nom"></span><br><br>
+                    <h3>Prenom :</h3><span id="par_prenom"></span><br><br>
+                    <h3>nombre d'adultes :</h3><span id="par_adultes"></span><br><br>
+                    <h3>nombre d'enfants :</h3><span id="par_enfants"></span><br><br>
+                    <h3>date de depart :</h3><span id="par_depart"></span><br><br>
+                    <h3>date d'arivee :</h3><span id="par_arrivee"></span><br><br>
+                    <h3>petit-déjeuner :</h3><span id="par_petitdej"></span><br><br>
+                    <h3>prix :</h3><span id="par_prix"></span><br><br>
+                    <h3>numéro de vol:</h3><span id="par_numVol"></span>
+
+             <form action="ajoutpanier.html" method="GET">
+                <input type="submit" onclick="incrementation()" id="soumission" value="ajouter au panier"><br><br>    
+
+            </form>
+            <form action="Structurehotels.html"  method="GET">
+                <input type="submit" id="soumission1" value="Annuler"><br><br>    
+
+            </form>
+    
+          
+    <script src="../code-javascript/code.js"></script>
+    </body>
+    
+    <footer id = 'bas'>
+        <p>adresse : 6 chemin du pain de mie</p>
+        <p>fritinerantur.co marque deposer </p>
+    </footer>
+
+</html>

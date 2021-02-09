@@ -1,0 +1,175 @@
+body {
+    background-color: rgb(231, 174, 16);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.France{ background-image: url(../image/france_drap.png);
+    background-size: cover;
+    font-size: 500%;
+    text-align: center;
+    }
+
+.text{
+
+
+    font-size: 300%;
+}
+#namesite{
+    margin: 0px;
+}
+#voyage {
+    color:rgb(16, 20, 231);
+    
+    text-align: center;
+    border: 2px solid linen;
+    
+    font-size: 500%;
+    
+    
+}
+
+.Hongrie{background-image: url(../image/hongrie.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 500%;
+    text-align: center;
+    
+}
+.Bresil{ background-image: url(../image/th.jpg);
+    background-position: center
+    ;background-size: cover;
+    font-size: 500%;
+    text-align: center;
+}
+.Japon{
+    background-image: url(../image/japon.jpg);
+    background-position: center
+    ;background-size: cover;
+    font-size: 500%;
+    text-align: center;
+}
+
+
+h2 {
+    padding: 30px;
+
+    
+    text-align: center;
+    font-size: 300%
+}
+
+.tete{ background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding:14px 25px;
+    text-align: center;
+    display: inline-block; 
+    text-decoration : none ; 
+    border: 3px double black }
+.tete:hover{
+    background-color: rgb(160, 155, 155);
+}
+#imagedepanier{
+    height: 20px;
+    width: 52px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    
+   padding: 0px 0px;
+   
+    display: inline-block; 
+    text-decoration : none ; 
+    border: 2px double black 
+}
+
+
+h3 {
+    font-family: Comic Sans MS;
+}
+
+a {
+    font-size: 30px;
+}
+#none{ 
+    height:100px;
+    width: 1600px;
+    background-color: rgb(43, 45, 151);
+    background-attachment: scroll,local;}
+
+
+
+
+
+
+
+#enhaut { position:fixed;
+    bottom: 10px;
+    right: -100px;;
+    opacity: 0.8;  }
+#fleche{ width: 35px;
+        height: 35px;}
+
+
+#haut{ position: fixed;
+    top: -0px;
+    left: -0px;
+    
+   }
+
+
+#rien{
+    padding: 100px ;
+}
+#namesite{ font-size: 500%;
+    color: aliceblue;
+    text-align: center;}
+#frite{ 
+    float: right;
+    padding: 5px;
+    width: 1000px;
+    height: 500px
+    
+
+
+}
+.area{
+    width: 1000px ;
+    height : 500px;
+    
+}
+.area:hover{
+    width: 1000px ;
+    height : 500px;
+    opacity: 0.6;
+
+
+}
+.textes{
+    font-size: 90%;
+}
+
+.country{
+    border: 3px solid rgb(16, 20, 231)
+}
+
+#bas{
+    text-align: center;
+}
+.temperature{
+    z-index: 3;
+    color: white;
+    position: relative;
+    top:-240px;
+    right: 600px;
+    font-size: 500%;
+    opacity: 1;
+}
+.temperature:hover{
+    z-index: 3;
+    color: white;
+    position: relative;
+    top:-240px;
+    right: 600px;
+    font-size: 500%;
+    opacity: 1;
+}
+    

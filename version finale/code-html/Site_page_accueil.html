@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="../stylesheet/hotels.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><label>voyage</label> </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+    
+    
+    
+</head>
+
+
+
+
+<body onload="connexion()">
+    <div id="haut"  >
+        <div id='none'>
+            <p id ='namesite'>fritinerantur</p>
+        </div>
+        <div>
+       
+        <a id ='menu' class = 'tete' href = 'Site_page_accueil.html' >menu</a>
+       
+        <a id ='contact' class = 'tete' href = 'page-de-contacte.html' >contact</a>
+       
+        <a id ='panier' class = 'tete' href = 'panier.html' >
+            <img id = imagedepanier  src='../image/panier.png ' alt="unes image de panier">
+            </a>
+        
+        <a id ='connexion' onclick="init()" class = 'tete' href = 'connexion.html' >connexion</a>
+       
+
+        </div>
+
+    </div>
+
+    <div id='enhaut'>
+        <a  href='#top'><img id='fleche' src="../image/fleche-haut.png"  alt="image fleche"></a>
+    </div>
+   <div id = 'rien'>
+
+   </div>
+    
+    <div id='choix'>
+        <img id = 'frite' src = '../image/frite.jpg' alt="image de frite" >
+        <br>Pays:<br>
+        <select id='lieu' onchange="text()" >
+            <option id='neutre'  value="neutre">pays</option>
+            <option id='pays1'   value="france">france</option>
+            <option id='pays2'   value="bresil">bresil</option>
+            <option id='pays3'   value="japon">japon</option>
+            <option id='pays4'   value="roumanie">roumanie</option>
+        
+        </select> 
+
+        
+        <p>animaux autorisé</p>
+    
+        <input onclick="text()" class="filtre" type="radio" id="animauxoui" name='animaux'  value="animauxoui"> 
+        <label class='filtre' for="animauxoui">oui</label>
+        <input onclick="text()" class="filtre" type="radio" id="animauxnon" name='animaux' value="animauxnon"> 
+        <label  class="filtre" for="animauxnon">non</label>
+           
+        <p>petit déjeuner inclu</p>
+   
+        <input onclick = "text()" class="filtre" name='jeuner' type="radio" id="dejeuner"  value="dejeuner"> 
+        <label class='filtre' for="dejeuner">oui</label>
+  
+   
+        <input onclick="text()" class="filtre" name='jeuner' type="radio" id="pasdejeuner" value="pasdejeuner"> 
+        <label  class="filtre" for="pasdejeuner">non</label>
+   
+        <p>valeur Min</p>
+        <input onchange="text()" id = 'min' >
+        <p>valeur Max</p>
+        <input onchange="text()" id = 'max'  >
+        <button onchange="text()" id ='validation' onclick="text()" name='valider'>valider</button>
+        <div>
+            <p>debut</p>
+            <input onchange='text()' id ='debut' type = 'date' value="2019-01-01" min="2019-01-01" max="2020-12-31">
+            <p>fin</p>
+            <input onchange="text()" id='fin' type = 'date' value="2020-12-31" min="2019-01-01" max="2020-12-31">
+        </div>
+
+    </div>
+    
+    <p id = 'voyage'>voyage</p>
+   
+
+   
+    <template id = 'fond'>
+        <div  class = 'goin'>
+            <p>    <!--ajout d une class par le template-->
+                    
+<!--ajout de texte par le template-->
+                    
+            </p>
+            <p class = 'text'>
+                   <!--ajout de texte par le template-->
+                    
+            </p>
+            <p class="picture"><!--ajout d attribut par le template-->
+                    <a id = 'im'>
+                    <img >
+                    </a>
+                    <a><!--temperature-->
+
+                    </a>
+
+
+            </p>
+    
+
+        </div>
+
+    </template>
+ 
+    
+<script src="../code-javascript/mytemplate.js"></script>
+<script src="../code-javascript/code.js"></script>
+</body>
+<footer id = 'bas'>
+    <p>adresse : 6 chemin du pain de mie</p>
+    <p>fritinerantur.co marque deposer </p>
+</footer>
+
+
+</html>

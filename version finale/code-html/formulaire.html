@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="../stylesheet/hotels.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><label>formulaire de reservation</label> </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+
+
+</head>
+
+<body onmouseover='charger()'>
+    <div id="haut"  >
+        <div id='none'>
+            <p id ='namesite'>fritinerantur</p>
+        </div>
+        <div>
+       
+        <a id ='menu' class = 'tete' href = 'Site_page_accueil.html' >menu</a>
+       
+        <a id ='contact' class = 'tete' href = 'page-de-contacte.html' >contact</a>
+       
+        <a id ='panier' class = 'tete' href = 'panier.html' >
+            <img id = imagedepanier  src='../image/panier.png ' alt="unes image de panier">
+            </a>
+        
+        <a id ='connexion' class = 'tete' onclick="init()" href = 'connexion.html' >connexion</a>
+       
+
+        </div>
+
+    </div>
+
+    <div id='enhaut'>
+        <a  href='#top'><img id='fleche' src="../image/fleche-haut.png"  alt="image fleche"></a>
+    </div>
+   <div id = 'rien'></div>
+
+    <h1>Formulaire de reservation </h1>
+    <div id=tet></div>
+
+    <form onchange="calculPrix()" action="recapitulatif.html" method="GET">
+            <label for="Prenom">Prénom* :</label><br><input type="text" id="Prenom" value="" required><br><br>
+            <label for="Nom">Nom*</label>:<br><input type="text" id="Nom" value="" required><br><br>
+            <label for="mail">adresse mail* :</label> <br><input type="email" id="mail" value="" required><br><br>
+            <label for="tel">Téléphone :</label><br><input type="tel" id="tel" value=""><br><br>
+            <label for="datedepart">date de départ* :</label><br><input type="date" id="datedepart" value="" min="2019-10-20" required><br><br>
+            <label for="datearrivee">date de retour* :</label><br><input type="date" id="datearrivee" required><br><br>
+            <label for="nbreadultes">Nombre d'adulte(s) :</label><br><input type="number" id="nbreadultes" min="1" value="1"><br><br>
+            <label for="nbreenfants">nombre d'enfants (-12 ans)* :</label><br><input type="number" id="nbreenfants" min="0" max="8" value="0"><br><br>
+            <label for="petitdejeuner">Petit-déjeuner?* :</label><br>
+                <input type="radio" name="petitdejeuner" value="" id="oui" onclick="oui.value=1"  /> 
+                <label for="oui">oui</label>
+                <input type="radio" name="petitdejeuner" value="" id="non" onclick="oui.value=0" /> 
+                <label for="non">non</label><br><br>
+            <label>Prix :</label><br><label id="par_prixx"></label><br><br>
+            <input type="submit" id="soumission" value="Soumettre le formulaire"><br><br>
+            <input type="reset" value="effacer tout"><br>
+
+    </form>
+    
+    <form method="post" action="mail.php" >
+        <label for="message"></label>
+        <textarea name="message" placeholder="Quelle est votre demande ? " maxlength="10000" id="message" ></textarea><br>
+            <input type="submit" value="Soumettre la demande">
+    </form>
+    <script src="../code-javascript/code.js"></script>
+    <div onload="calculPrix()">
+
+    </div>
+</body>
+<footer id = 'bas'>
+    <p>adresse : 6 chemin du pain de mie</p>
+    <p>fritinerantur.co marque deposer </p>
+</footer>
+
+</html>

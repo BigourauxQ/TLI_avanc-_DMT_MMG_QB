@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Caravelle</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <script src="scripts/Jscript.js"></script>
+
+</head>
+
+<body onscroll="fscroll()" onload="Setup();isConnect()">
+    <header id="top">
+        <h1><a href="Accueil.html" id="backtohome">Acupuncture Zen</a></h1>
+    </header>
+
+
+    <button onclick="TopPage()" id="topbutton" title="top"> Top</button>
+
+    </nav>
+    
+    <div>
+        <p>identifiant</p>
+        <input id = 'identifiant'>
+        <p>mot de passe</p>
+        <input id = 'motdepass' onchange="connexion()" >
+        <a onclick="connexion()" href='../code-html/Site_page_accueil.html' >valider</a>
+        <a onclick="senregistrer()" href='../code-html/Site_page_accueil.html' >s'enregistrer</a>
+
+    </div>
+    
+
